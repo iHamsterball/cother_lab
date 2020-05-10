@@ -16,11 +16,11 @@
         <meta name="apple-touch-fullscreen" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/favicon/site.webmanifest">
-        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="apple-touch-icon preload" as="image" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link rel="icon preload" type="image/png" as="image" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon preload" type="image/png" as="image" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest preload" as="manifest" href="/favicon/site.webmanifest">
+        <link rel="mask-icon preload" as="image" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         <!-- Preload & Prefetch -->
@@ -28,6 +28,9 @@
         <link rel="stylesheet preload" as="style" href="css/normalize.css">
         <link rel="stylesheet preload" as="style" href="css/notosansscsliced-regular.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Major+Mono+Display&display=swap&text=CLWabefhilortw">
+        <link rel="preload" as="fetch" href="/analytics.js">
+        <link rel="preload" as="fetch" href="https://fonts.gstatic.com/ea/notosansscsliced/v2/NotoSansSCSliced-Regular.86.woff2">
+        <link rel="preload" as="fetch" href="https://fonts.gstatic.com/ea/notosansscsliced/v2/NotoSansSCSliced-Regular.100.woff2">
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
         <link rel="dns-prefetch" href="https://tx.cother.org">
         <link rel="dns-prefetch" href="https://g2.cother.org">
@@ -61,7 +64,7 @@
                             <div class="navigator stellaris">
                                 <div class="navigator-filter">
                                     <div class="navigator-icon no-blur">
-                                        <img class="navigator-image no-blur" src="img/stellaris.bmp" alt="Stellaris Tech Tree">
+                                        <img class="navigator-image no-blur" rel="preload" as="image" src="img/stellaris.bmp" alt="Stellaris Tech Tree">
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +75,7 @@
                             <div class="navigator send">
                                 <div class="navigator-filter">
                                     <div class="navigator-icon no-blur">
-                                        <img class="navigator-image no-blur" src="img/firefox-send.svg" alt="Firefox Send">
+                                        <img class="navigator-image no-blur" rel="preload" as="image" src="img/firefox-send.svg" alt="Firefox Send">
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +86,7 @@
                             <div class="navigator status">
                                 <div class="navigator-filter">
                                     <div class="navigator-icon no-blur">
-                                        <img class="navigator-image no-blur" src="img/status.ico" alt="Server Status">
+                                        <img class="navigator-image no-blur" rel="preload" as="image" src="img/status.ico" alt="Server Status">
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +97,7 @@
                             <div class="navigator xssor">
                                 <div class="navigator-filter">
                                     <div class="navigator-icon no-blur">
-                                        <img class="navigator-image no-blur" src="img/xssor.jpeg" alt="XSS'OR">
+                                        <img class="navigator-image no-blur" rel="preload" as="image" src="img/xssor.jpeg" alt="XSS'OR">
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +108,7 @@
                             <div class="navigator cert">
                                 <div class="navigator-filter">
                                     <div class="navigator-icon no-blur">
-                                        <img class="navigator-image no-blur" src="img/cert.ico" alt="Cert Transparency Report">
+                                        <img class="navigator-image no-blur" rel="preload" as="image" src="img/cert.ico" alt="Cert Transparency Report">
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +119,7 @@
                             <div class="navigator google">
                                 <div class="navigator-filter">
                                     <div class="navigator-icon no-blur">
-                                        <img class="navigator-image no-blur" src="img/google.svg" alt="Google Mirror">
+                                        <img class="navigator-image no-blur" rel="preload" as="image" src="img/google.svg" alt="Google Mirror">
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +130,7 @@
                             <div class="navigator aria">
                                 <div class="navigator-filter">
                                     <div class="navigator-icon no-blur">
-                                        <img class="navigator-image no-blur" src="img/aria2.png" alt="Aria2 WebUI">
+                                        <img class="navigator-image no-blur" rel="preload" as="image" src="img/aria2.png" alt="Aria2 WebUI">
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +141,7 @@
                             <div class="navigator grafana">
                                 <div class="navigator-filter">
                                     <div class="navigator-icon no-blur">
-                                        <img class="navigator-image no-blur" src="img/grafana.svg" alt="Grafana">
+                                        <img class="navigator-image no-blur" rel="preload" as="image" src="img/grafana.svg" alt="Grafana">
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +152,7 @@
                             <div class="navigator asstosrt">
                                 <div class="navigator-filter">
                                     <div class="navigator-icon no-blur">
-                                        <img class="navigator-image no-blur" src="img/closed-captioning.svg" alt="AsstoSrt WASM">
+                                        <img class="navigator-image no-blur" rel="preload" as="image" src="img/closed-captioning.svg" alt="AsstoSrt WASM">
                                     </div>
                                 </div>
                             </div>
